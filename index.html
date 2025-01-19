@@ -80,7 +80,7 @@
     <section class="relative w-full h-[100vh] flex justify-center items-center overflow-hidden" id="home">
         <!-- Background Image -->
         <div class="absolute top-0 left-0 w-full h-full z-[-1]">
-            <img src="assets/bghome.jpg" alt="Background Home Image" class="w-full h-full object-cover filter brightness-[50%]">
+            <img src="assets/bghome.jpg" alt="Background Home Image" id="home-bg" class="w-full h-full object-cover filter brightness-[50%]">
         </div>
         
         <!-- Content Container -->
@@ -165,35 +165,94 @@
         </div>
     </section>
 
+    <!-- Skill -->
+    <section class="bg-[#EEEDEB] text-black py-12">
+        <div class="max-w-2xl mx-auto px-6">
+            <!-- Heading Section -->
+            <header class="mb-8">
+                <h2 class="text-3xl font-bold">Skills</h2>
+                <h3 class="text-xl font-semibold text-black mt-2">Development</h3>
+            </header>
+    
+            <!-- Skill Progress Bars -->
+            <div class="space-y-6">
+                <!-- Skill 1 -->
+                <section>
+                    <div class="flex justify-between items-center mb-2">
+                        <span>PHP</span>
+                        <span>75%</span>
+                    </div>
+                    <div class="w-full bg-gray-700 h-2 rounded">
+                        <div class="bg-blue-500 h-2 rounded" style="width: 75%;"></div>
+                    </div>
+                </section>
+    
+                <!-- Skill 2 -->
+                <section>
+                    <div class="flex justify-between items-center mb-2">
+                        <span>MySQL Databases</span>
+                        <span>60%</span>
+                    </div>
+                    <div class="w-full bg-gray-700 h-2 rounded">
+                        <div class="bg-blue-500 h-2 rounded" style="width: 60%;"></div>
+                    </div>
+                </section>
+    
+                <!-- Skill 3 -->
+                <section>
+                    <div class="flex justify-between items-center mb-2">
+                        <span>Python</span>
+                        <span>65%</span>
+                    </div>
+                    <div class="w-full bg-gray-700 h-2 rounded">
+                        <div class="bg-blue-500 h-2 rounded" style="width: 65%;"></div>
+                    </div>
+                </section>
+
+                <!-- Skill 4 -->
+                <section>
+                    <div class="flex justify-between items-center mb-2">
+                        <span>3D Blender</span>
+                        <span>45%</span>
+                    </div>
+                    <div class="w-full bg-gray-700 h-2 rounded">
+                        <div class="bg-blue-500 h-2 rounded" style="width: 45%;"></div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </section>
+    
+
     <!-- Projeck -->
     <section class="bg-[#EEEDEB] min-h-screen flex items-center justify-center" id="projects">
         <div class="container mx-auto max-w-7xl p-6">
             <div class="grid grid-cols-2 gap-1">
                 <!-- Placeholder untuk gambar besar -->
-                <div class="relative w-5/6 h-[400px] flex items-center justify-center rounded-lg overflow-hidden">
+                <div class="relative w-[590px] h-[400px] flex items-center justify-center rounded-lg overflow-hidden">
                     <!-- Gambar-gambar -->
                     <img src="/image/ResepIn.png" alt="resepin" 
                         class="absolute inset-0 w-full h-full object-cover opacity-0 scale-90 transition-all duration-500 ease-in-out" id="preview-resepin">
                     <img src="/image/Gor.png" alt="gor" 
                         class="absolute inset-0 w-full h-full object-cover opacity-0 scale-90 transition-all duration-500 ease-in-out" id="preview-gor">
-                    <img src="/image/ResepIn.png" alt="resepin" 
-                        class="absolute inset-0 w-full h-full object-cover opacity-0 scale-90 transition-all duration-500 ease-in-out" id="preview-resepin">
-                    <img src="/image/ResepIn.png" alt="resepin" 
-                        class="absolute inset-0 w-full h-full object-cover opacity-0 scale-90 transition-all duration-500 ease-in-out" id="preview-resepin">
-                    <img src="/image/ResepIn.png" alt="resepin" 
-                        class="absolute inset-0 w-full h-full object-cover opacity-0 scale-90 transition-all duration-500 ease-in-out" id="preview-resepin">
-                    <img src="/image/ResepIn.png" alt="resepin" 
-                        class="absolute inset-0 w-full h-full object-cover opacity-0 scale-90 transition-all duration-500 ease-in-out" id="preview-resepin">
-                    <img src="/image/ResepIn.png" alt="resepin" 
-                        class="absolute inset-0 w-full h-full object-cover opacity-0 scale-90 transition-all duration-500 ease-in-out" id="preview-resepin">
-                    <img src="/image/ResepIn.png" alt="resepin" 
-                        class="absolute inset-0 w-full h-full object-cover opacity-0 scale-90 transition-all duration-500 ease-in-out" id="preview-resepin">
-                    <img src="/image/ResepIn.png" alt="resepin" 
-                        class="absolute inset-0 w-full h-full object-cover opacity-0 scale-90 transition-all duration-500 ease-in-out" id="preview-resepin">
-                    <img src="/image/ResepIn.png" alt="resepin" 
-                        class="absolute inset-0 w-full h-full object-cover opacity-0 scale-90 transition-all duration-500 ease-in-out" id="preview-resepin">                        
-                    <img src="/image/ResepIn.png" alt="resepin" 
-                        class="absolute inset-0 w-full h-full object-cover opacity-0 scale-90 transition-all duration-500 ease-in-out" id="preview-resepin">
+                    <img src="/image/Jajan.png" alt="jajan" 
+                        class="absolute inset-0 w-full h-full object-cover opacity-0 scale-90 transition-all duration-500 ease-in-out" id="preview-jajan">
+                    <img src="/image/Mhr.png" alt="mhr" 
+                        class="absolute inset-0 w-full h-full object-cover opacity-0 scale-90 transition-all duration-500 ease-in-out" id="preview-mhr">
+                    <img src="" alt="" 
+                        class="absolute inset-0 w-full h-full object-cover opacity-0 scale-90 transition-all duration-500 ease-in-out" id="preview-">
+                    <img src="" alt="" 
+                        class="absolute inset-0 w-full h-full object-cover opacity-0 scale-90 transition-all duration-500 ease-in-out" id="preview-">
+                    <img src="" alt="" 
+                        class="absolute inset-0 w-full h-full object-cover opacity-0 scale-90 transition-all duration-500 ease-in-out" id="preview-">
+                    <img src="" alt="" 
+                        class="absolute inset-0 w-full h-full object-cover opacity-0 scale-90 transition-all duration-500 ease-in-out" id="preview-">
+                    <img src="" alt="" 
+                        class="absolute inset-0 w-full h-full object-cover opacity-0 scale-90 transition-all duration-500 ease-in-out" id="preview-">
+                    <img src="" alt="" 
+                        class="absolute inset-0 w-full h-full object-cover opacity-0 scale-90 transition-all duration-500 ease-in-out" id="preview-">                        
+                    <img src="" alt="" 
+                        class="absolute inset-0 w-full h-full object-cover opacity-0 scale-90 transition-all duration-500 ease-in-out" id="preview-">
 
                     <p class="text-gray-500 text-lg hidden" id="no-preview"></p>
                 </div>
@@ -232,6 +291,131 @@
                                 </div>
                             </li>
 
+                            <li class="relative group border-b border-gray-700 pb-2">
+                                <div class="flex justify-between items-center">
+                                    <a href="#" class="block text-black"
+                                        onmouseenter="showImage('preview-jajan')" onmouseleave="hideImages()">
+                                        Website Sistem Informasi Jajan Utm
+                                    </a>
+                                    <span class="text-sm text-black">Laravel</span>
+                                </div>
+                                <div class="hidden group-hover:block mt-2">
+                                    <a href="#" class="text-sm text-blue-600">View Source</a> 
+                                    <a href="#" class="text-sm text-blue-600">View Project</a>
+                                </div>
+                            </li>
+
+                            <li class="relative group border-b border-gray-700 pb-2">
+                                <div class="flex justify-between items-center">
+                                    <a href="#" class="block text-black"
+                                        onmouseenter="showImage('preview-mhr')" onmouseleave="hideImages()">
+                                        Prediksi Kesehatan Ibu Hamil
+                                    </a>
+                                    <span class="text-sm text-black">Data Science</span>
+                                </div>
+                                <div class="hidden group-hover:block mt-2">
+                                    <a href="#" class="text-sm text-blue-600">View Source</a> 
+                                    <a href="#" class="text-sm text-blue-600">View Project</a>
+                                </div>
+                            </li>
+
+                            <!-- <li class="relative group border-b border-gray-700 pb-2">
+                                <div class="flex justify-between items-center">
+                                    <a href="#" class="block text-black"
+                                        onmouseenter="showImage('preview-mhr')" onmouseleave="hideImages()">
+                                        Memenuhi Persyaratan Donor Darah
+                                    </a>
+                                    <span class="text-sm text-black">Data Mining</span>
+                                </div>
+                                <div class="hidden group-hover:block mt-2">
+                                    <a href="#" class="text-sm text-blue-600">View Source</a> 
+                                    <a href="#" class="text-sm text-blue-600">View Project</a>
+                                </div>
+                            </li>
+
+                            <li class="relative group border-b border-gray-700 pb-2">
+                                <div class="flex justify-between items-center">
+                                    <a href="#" class="block text-black"
+                                        onmouseenter="showImage('preview-mhr')" onmouseleave="hideImages()">
+                                        Klasifikasi Udara Jogja
+                                    </a>
+                                    <span class="text-sm text-black">Data Science</span>
+                                </div>
+                                <div class="hidden group-hover:block mt-2">
+                                    <a href="#" class="text-sm text-blue-600">View Source</a> 
+                                    <a href="#" class="text-sm text-blue-600">View Project</a>
+                                </div>
+                            </li>
+
+                            <li class="relative group border-b border-gray-700 pb-2">
+                                <div class="flex justify-between items-center">
+                                    <a href="#" class="block text-black"
+                                        onmouseenter="showImage('preview-mhr')" onmouseleave="hideImages()">
+                                        Prediksi Temperatur PerJam Kedepan
+                                    </a>
+                                    <span class="text-sm text-black">Data Science</span>
+                                </div>
+                                <div class="hidden group-hover:block mt-2">
+                                    <a href="#" class="text-sm text-blue-600">View Source</a> 
+                                    <a href="#" class="text-sm text-blue-600">View Project</a>
+                                </div>
+                            </li>
+                            
+                            <li class="relative group border-b border-gray-700 pb-2">
+                                <div class="flex justify-between items-center">
+                                    <a href="#" class="block text-black"
+                                        onmouseenter="showImage('preview-mhr')" onmouseleave="hideImages()">
+                                        Electric Power Consumption
+                                    </a>
+                                    <span class="text-sm text-black">Data Science</span>
+                                </div>
+                                <div class="hidden group-hover:block mt-2">
+                                    <a href="#" class="text-sm text-blue-600">View Source</a> 
+                                    <a href="#" class="text-sm text-blue-600">View Project</a>
+                                </div>
+                            </li>
+
+                            <li class="relative group border-b border-gray-700 pb-2">
+                                <div class="flex justify-between items-center">
+                                    <a href="#" class="block text-black"
+                                        onmouseenter="showImage('preview-mhr')" onmouseleave="hideImages()">
+                                        3D Donat
+                                    </a>
+                                    <span class="text-sm text-black">3D Moddelling</span>
+                                </div>
+                                <div class="hidden group-hover:block mt-2">
+                                    <a href="#" class="text-sm text-blue-600">View Source</a> 
+                                    <a href="#" class="text-sm text-blue-600">View Project</a>
+                                </div>
+                            </li>
+
+                            <li class="relative group border-b border-gray-700 pb-2">
+                                <div class="flex justify-between items-center">
+                                    <a href="#" class="block text-black"
+                                        onmouseenter="showImage('preview-mhr')" onmouseleave="hideImages()">
+                                        3D Karakter Alien
+                                    </a>
+                                    <span class="text-sm text-black">3D Generalist</span>
+                                </div>
+                                <div class="hidden group-hover:block mt-2">
+                                    <a href="#" class="text-sm text-blue-600">View Source</a> 
+                                    <a href="#" class="text-sm text-blue-600">View Project</a>
+                                </div>
+                            </li>
+
+                            <li class="relative group border-b border-gray-700 pb-2">
+                                <div class="flex justify-between items-center">
+                                    <a href="#" class="block text-black"
+                                        onmouseenter="showImage('preview-mhr')" onmouseleave="hideImages()">
+                                        3D Karakter Manusia
+                                    </a>
+                                    <span class="text-sm text-black">3D Generalist</span>
+                                </div>
+                                <div class="hidden group-hover:block mt-2">
+                                    <a href="#" class="text-sm text-blue-600">View Source</a> 
+                                    <a href="#" class="text-sm text-blue-600">View Project</a>
+                                </div>
+                            </li> -->
                         </ul>
                     </div>
                 </div>
@@ -239,10 +423,8 @@
         </div>
     </section>
     
-
-
     <!-- contact -->
-    <section id="contact" class="py-20 px-5 bg-[#EEEDEB] w-full min-h-screen flex flex-col items-center">
+    <section id="contact" class="py-40 px-5 bg-[#EEEDEB] w-full min-h-screen flex flex-col items-center">
         <div class="text-center mb-10">
             <h2 class="font-bold text-5xl  mb-2">Contact</h2>
             <p class="text-xl text-[#666] mb-5">Contact me via email or social media</p>
@@ -407,7 +589,34 @@
         document.getElementById('no-preview').classList.remove('hidden');
     }
 
-        
+    function hideImages() {
+        // Sembunyikan hanya gambar di dalam container projek
+        const images = document.querySelectorAll('#projects img.object-cover');
+        images.forEach(img => {
+            img.classList.add('opacity-0', 'scale-90');
+        });
+    
+        // Tampilkan kembali placeholder teks
+        document.getElementById('no-preview').classList.remove('hidden');
+    }
+    
+    function showImage(imageId) {
+        // Sembunyikan placeholder teks
+        document.getElementById('no-preview').classList.add('hidden');
+    
+        // Sembunyikan semua gambar di section Projects
+        const images = document.querySelectorAll('#projects img.object-cover');
+        images.forEach(img => {
+            img.classList.add('opacity-0', 'scale-90');
+        });
+    
+        // Tampilkan gambar yang dimaksud
+        const targetImage = document.getElementById(imageId);
+        if (targetImage) {
+            targetImage.classList.remove('opacity-0', 'scale-90');
+            targetImage.classList.add('scale-100');
+        }
+    }
     </script>
 </body>
 </html>
