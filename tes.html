@@ -86,7 +86,7 @@
         <!-- Content Container -->
         <div class="flex flex-col items-center text-center p-4">
             <div>
-                <h1 class="font-bold text-[2.5em] sm:text-[3em] md:text-[3.5em] lg:text-[4em] text-[#eeeeee]">Hi, I'm <span class="text-[#7f7971]">Rere</span></h1>
+                <h1 class="font-bold text-[3em] sm:text-[2.5em] lg:text-[3em] text-[#eeeeee]">Hi, I'm <span class="text-[#7f7971]">Rere</span></h1>
                 <p class="text-lg sm:text-xl lg:text-2xl text-[#eeeeee]">IT Student</p>
             </div>
         </div>
@@ -344,13 +344,13 @@
 
         <div class="flex justify-center w-full">
             <form action="send-email.php" method="POST" class="w-full max-w-xl rounded-lg p-6">
-                <!-- Kontainer Input -->
                 <div class="flex flex-wrap gap-[20px] mb-[20px]">
                     <!-- Input Name -->
                     <div class="flex-1">
                         <label for="name" class="block mb-[5px] font-bold text-[#242424]">Your Name</label>
                         <input
                             type="text"
+                            name="name"
                             id="name"
                             placeholder="Enter your name"
                             required
@@ -362,6 +362,7 @@
                         <label for="email" class="block mb-[5px] font-bold text-[#242424]">Email Address</label>
                         <input
                             type="email"
+                            name="email"
                             id="email"
                             placeholder="Enter your email address"
                             required
@@ -371,18 +372,18 @@
                 </div>
                 <!-- Input Message -->
                 <div class="mb-[20px]">
-                    <div>
-                        <label for="message" class="block mb-[5px] font-bold text-[#242424]">Your Message</label>
-                        <textarea
-                            id="message"
-                            placeholder="Hi, wanna send message?"
-                            required
-                            class="w-full h-[150px] px-[10px] pt-2 text-[10px] placeholder:text-[10px] text-[#242424] bg-transparent border-b border-[#242424] resize-y focus:ring-1 focus:ring-[#333]"
-                        ></textarea>
-                    </div>
+                    <label for="message" class="block mb-[5px] font-bold text-[#242424]">Your Message</label>
+                    <textarea
+                        name="message"
+                        id="message"
+                        placeholder="Hi, wanna send message?"
+                        required
+                        class="w-full h-[150px] px-[10px] pt-2 text-[10px] placeholder:text-[10px] text-[#242424] bg-transparent border-b border-[#242424] resize-y focus:ring-1 focus:ring-[#333]"
+                    ></textarea>
                 </div>
-            <button type="submit" class="w-20 bg-[#696969] text-white py-2 px-1 rounded-md hover:bg-[#333]">Send</button>
-        </form>
+                <button type="submit" class="w-20 bg-[#696969] text-white py-2 px-1 rounded-md hover:bg-[#333]">Send</button>
+            </form>
+            
     </section>    
 
     <!-- footer -->

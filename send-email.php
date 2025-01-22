@@ -1,31 +1,38 @@
 <?php
-// Periksa apakah form telah disubmit
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Ambil data dari form
-    $name = htmlspecialchars($_POST['name']);
-    $email = htmlspecialchars($_POST['email']);
-    $message = htmlspecialchars($_POST['message']);
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        // Ambil data dari formulir
+        $name = htmlspecialchars(trim($_POST['name']));
+        $email = htmlspecialchars(trim($_POST['email']));
+        $message = htmlspecialchars(trim($_POST['message']));
 
-    // Validasi email
-    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        echo "Invalid email format";
-        exit;
+        // Validasi input
+        if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+            die("Invalid email address.");
+        }
+
+        // Konfigurasi email
+        $to = "nikiraihan131@gmail.com";
+        $subject = "Contact Form Message from $name";
+        $body = "You received a new message from your website contact form:\n\n" .
+                "Name: $name\n" .
+                "Email: $email\n\n" .
+                "Message:\n$message";
+
+        $headers = "From: $email\r\n";
+        $headers .= "Reply-To: $email\r\n";
+
+        // Kirim email
+        if (mail($to, $subject, $body, $headers)) {
+            echo "Message sent successfully.";
+        } else {
+            echo "Failed to send message. Please try again later.";
+        }
+
+        if (mail($to, $subject, $body, $headers)) {
+            header("Location: thank-you.html");
+            exit();
+        } else {
+            echo "Failed to send message.";
+        }        
     }
-
-    // Konfigurasi email tujuan
-    $to = "minejas719@gmail.com";
-    $subject = "New Message from Contact Form";
-    $body = "You have received a new message from $name.\n\n".
-            "Email: $email\n".
-            "Message:\n$message";
-
-    $headers = "From: $email";
-
-    // Kirim email
-    if (mail($to, $subject, $body, $headers)) {
-        echo "<script>alert('Message sent successfully!'); window.location.href='index.html';</script>";
-    } else {
-        echo "<script>alert('Failed to send message. Please try again.'); window.location.href='index.html';</script>";
-    }
-}
 ?>
